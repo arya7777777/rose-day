@@ -562,19 +562,22 @@ html, body {
   animation: glow 2s ease-in-out infinite alternate;
 }
 /* Message Glass Box Styling */
+/* Message Glass Box Styling */
 .message-box {
-  position: fixed;   /* screen ke bottom me fix karne ke liye */
-  left: 50%;
-  transform: translateX(-50%); /* center align */
-  bottom: 50px; /* rose se gap */
-  
-  width: 300px;
-  padding: 15px 20px;
+  position: absolute;
+  bottom: -180px;      /* bottom se thoda upar */
+  left: 50%;          /* horizontally center */
+  transform: translateX(-50%);
+  width: 250px;       /* box width */
+  padding: 15px;
   background: rgba(255, 255, 255, 0.15); /* glass effect */
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 2px solid rgba(255, 255, 255, 0.3);
   border-radius: 15px;
-  backdrop-filter: blur(10px);
-  color: #fff;
+  backdrop-filter: blur(10px); /* glass blur effect */
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
   text-align: center;
-  font-size: 16px;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
 }

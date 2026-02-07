@@ -553,10 +553,11 @@ html, body {
   }
 .title-img {
   position: absolute;
-  top: 20px;
+  top: 110px;              /* 🔥 moved DOWN properly */
   left: 50%;
   transform: translateX(-50%);
   width: 260px;
+  z-index: 5;
   filter: drop-shadow(0 0 12px rgba(255, 105, 180, 0.6));
   animation: glow 2s ease-in-out infinite alternate;
 }

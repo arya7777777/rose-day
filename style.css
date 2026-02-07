@@ -562,17 +562,19 @@ html, body {
   animation: glow 2s ease-in-out infinite alternate;
 }
 .love-message {
-  position: fixed;          /* screen ke bottom ke liye fixed */
-  bottom: 50px;             /* bottom se gap */
+  position: fixed;         /* page ke bottom me fix */
+  bottom: 50px;            /* bottom se gap */
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
   font-size: 18px;
   color: #ffd1dc;
-  white-space: nowrap;      /* horizontal line */
-  opacity: 0;               /* initially invisible */
+  max-width: 80%;          /* page ke 80% width me text fit hoga */
+  word-wrap: break-word;   /* long text line me wrap hoga */
+  padding: 0 20px;         /* sides me gap */
+  opacity: 0;              /* initially invisible */
   animation: slideUp 2.5s ease forwards;
-  animation-delay: 1.5s;    /* delay before showing */
+  animation-delay: 1.5s;   /* delay before showing */
   z-index: 10;
 }
 

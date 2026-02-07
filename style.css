@@ -564,7 +564,7 @@ html, body {
 /* Message Glass Box Styling */
 .message-box {
   position: absolute;
-  bottom: 80px;      /* bottom se thoda upar */
+  bottom: -50px;      /* bottom se thoda upar */
   left: 50%;          /* horizontally center */
   transform: translateX(-50%);
   width: 250px;       /* box width */

@@ -561,3 +561,22 @@ html, body {
   filter: drop-shadow(0 0 12px rgba(255, 105, 180, 0.7));
   animation: glow 2s ease-in-out infinite alternate;
 }
+/* Message Glass Box Styling */
+.message-box {
+  position: absolute;
+  bottom: 20px;      /* bottom se thoda upar */
+  left: 50%;          /* horizontally center */
+  transform: translateX(-50%);
+  width: 250px;       /* box width */
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.15); /* glass effect */
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 15px;
+  backdrop-filter: blur(10px); /* glass blur effect */
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  text-align: center;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
+                                }

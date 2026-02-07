@@ -551,32 +551,3 @@ html, body {
       box-shadow: 0px 0px 60px #f594b8;
     }
   }
-.love-message {
-  position: fixed;           /* screen bottom me fix */
-  bottom: 50px;              /* bottom se gap */
-  left: 50%;
-  transform: translateX(-50%);
-  max-width: 90%;            /* sides se gap */
-  text-align: center;
-  font-size: 18px;
-  color: #ffd1dc;
-  white-space: normal;       /* allow wrapping if needed */
-  line-height: 1.4;          /* easy reading */
-  padding: 0 20px;           /* sides me extra space */
-  border-radius: 10px;
-  opacity: 0;                /* initially hidden */
-  animation: fadeUp 2.5s ease forwards;
-  animation-delay: 1.5s;
-  z-index: 999;
-}
-
-@keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translate(-50%, 20px);
-  }
-  to {
-    opacity: 1;
-    transform: translate(-50%, 0);
-  }
-    }

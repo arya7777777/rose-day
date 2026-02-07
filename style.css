@@ -562,16 +562,17 @@ html, body {
   animation: glow 2s ease-in-out infinite alternate;
 }
 .love-message {
-  position: absolute;       /* screen pe free place */
-  bottom: 80px;             /* rose ke neeche gap */
+  position: fixed;          /* screen ke bottom ke liye fixed */
+  bottom: 50px;             /* bottom se gap */
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
   font-size: 18px;
   color: #ffd1dc;
+  white-space: nowrap;      /* horizontal line */
   opacity: 0;               /* initially invisible */
   animation: slideUp 2.5s ease forwards;
-  animation-delay: 1.5s;    /* 1.5 sec baad show hoga */
+  animation-delay: 1.5s;    /* delay before showing */
   z-index: 10;
 }
 
